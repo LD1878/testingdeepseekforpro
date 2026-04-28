@@ -1,0 +1,16 @@
+<header class="bg-gray-900 text-white p-4">
+  <div class="max-w-6xl mx-auto flex justify-between items-center">
+    <a href="{{ page.lang | prepend: '/' | append: '/' | relative_url }}" class="text-2xl font-bold">
+      {{ site.data.translations.site_title }}
+    </a>
+    <nav class="space-x-4">
+      {% assign lang_prefix = page.lang | prepend: '/' | append: '/' %}
+      <a href="{{ lang_prefix | relative_url }}">Home</a>
+      <a href="{{ lang_prefix | append: 'gpt.html' | relative_url }}">GPT</a>
+      <a href="{{ lang_prefix | append: 'claude.html' | relative_url }}">Claude</a>
+      <a href="{{ lang_prefix | append: 'ethics.html' | relative_url }}">Ethics</a>
+      <a href="{{ lang_prefix | append: 'prompt-library.html' | relative_url }}">Prompts</a>
+      {% include language-toggle.html %}
+    </nav>
+  </div>
+</header>
