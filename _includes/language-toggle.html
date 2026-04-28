@@ -1,0 +1,32 @@
+<!-- Toggle between English and Spanish. Uses page.lang to figure out alternate URL -->
+{% assign current_lang = page.lang %}
+{% assign alt_lang = "es" %}
+{% assign alt_text = "Español" %}
+{% if current_lang == "es" %}
+  {% assign alt_lang = "en" %}
+  {% assign alt_text = "English" %}
+{% endif %}
+<a href="#" onclick="switchLang('{{ alt_lang }}')" class="text-yellow-300 hover:underline">
+  {{ alt_text }}
+</a>
+<script>
+  function switchLang(lang) {
+    // replace /en/ or /es/ in current URL with the new language prefix
+    let path = window.location.pathname;
+    // simple replacement: remove first directory and prepend new one
+    path = path.replace(/^\/(en|es)\//, '/' + lang + '/');
+    // if path didn't change (homepage without lang), redirect to lang root
+    if (path === window.location.pathname) {
+      path = '/' + lang + '/';
+    }
+    localStorage.setItem('preferredLang', lang);
+    window.location.href = path;
+  }
+  // On page load, redirect to stored language if we’re at root
+  (function() {
+    if (window.location.pathname === '/' || window.location.pathname === '') {
+      const pref = localStorage.getItem('preferredLang') || 'en';
+      window.location.replace('/' + pref + '/');
+    }
+  })();
+</script>
