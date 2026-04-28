@@ -1,0 +1,22 @@
+# .github/workflows/news_fetch.yml
+name: Fetch AI News
+on:
+  schedule:
+    - cron: '0 7 * * *'  # daily at 7am UTC
+  workflow_dispatch:
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+      - name: Run news fetcher
+        run: python scripts/fetch_news.py
+      - name: Commit and push
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add _posts/
+          git commit -m "Automated news update" || echo "No changes"
+          git push
