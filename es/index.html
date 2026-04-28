@@ -1,0 +1,30 @@
+---
+layout: default
+lang: es
+title: "Inicio - El Plano de la IA"
+description: "Tu fuente definitiva para herramientas de IA, guías sectoriales y conocimiento comunitario."
+schema_type: "WebSite"
+---
+<section class="text-center py-12">
+  <h1 class="text-5xl font-bold mb-4">El Plano de la IA</h1>
+  <p class="text-xl text-gray-600 mb-8">Domina la inteligencia artificial, una herramienta y un sector a la vez.</p>
+  <a href="/es/gpt.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700">Explorar GPT Pilar</a>
+</section>
+<section class="grid md:grid-cols-2 gap-8 mt-12">
+  <div>
+    <h2 class="text-2xl font-semibold mb-3">Páginas Pilar</h2>
+    <ul class="space-y-2">
+      {% for tool in site.data.tools %}
+      <li><a href="{{ tool.pillar_url[page.lang] | relative_url }}" class="text-blue-600 hover:underline">{{ tool.name[page.lang] }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-2xl font-semibold mb-3">Guías Programáticas Destacadas</h2>
+    <ul class="space-y-2">
+      <li><a href="/es/chatgpt-bienes-raices.html" class="text-blue-600 hover:underline">ChatGPT para Bienes Raíces</a></li>
+      <li><a href="/es/claude-litigios.html" class="text-blue-600 hover:underline">Claude para Litigios</a></li>
+      <li><a href="/es/gemini-marketing.html" class="text-blue-600 hover:underline">Gemini para Marketing</a></li>
+    </ul>
+  </div>
+</section>
