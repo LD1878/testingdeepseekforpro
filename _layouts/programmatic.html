@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% assign tool = page.tool %}
+{% assign industry = page.industry %}
+<article>
+  <h1 class="text-4xl font-bold mb-2">{{ tool.name[page.lang] }} for {{ industry.name[page.lang] }}</h1>
+  <p class="text-lg text-gray-600 mb-6">How professionals in {{ industry.name[page.lang] }} use {{ tool.name[page.lang] }} to improve workflow, decision-making, and automation.</p>
+
+  <div class="prose max-w-none">
+    <!-- Auto-generated body from data (here a simple placeholder) -->
+    <p>{{ page.body[page.lang] }}</p>
+  </div>
+
+  <section class="mt-8">
+    <h2 class="text-2xl font-semibold mb-3">Quick Steps</h2>
+    {% for step in page.steps %}
+    <div class="mb-4 p-4 bg-white rounded shadow">
+      <h3 class="font-bold">{{ step.name[page.lang] }}</h3>
+      <p>{{ step.text[page.lang] }}</p>
+    </div>
+    {% endfor %}
+  </section>
+</article>
