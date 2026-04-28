@@ -1,0 +1,44 @@
+# _data/tools.yml
+- id: chatgpt
+  name:
+    en: "ChatGPT"
+    es: "ChatGPT"
+  description:
+    en: "OpenAI's conversational AI assistant."
+    es: "Asistente conversacional de IA de OpenAI."
+  pillar_url:
+    en: "/en/chatgpt.html"
+    es: "/es/chatgpt.html"
+
+- id: claude
+  name:
+    en: "Claude"
+    es: "Claude"
+  description:
+    en: "Anthropic's safe and steerable AI."
+    es: "IA segura y controlable de Anthropic."
+  pillar_url:
+    en: "/en/claude.html"
+    es: "/es/claude.html"
+
+- id: gemini
+  name:
+    en: "Gemini"
+    es: "Gemini"
+  description:
+    en: "Google's multimodal AI model."
+    es: "Modelo multimodal de IA de Google."
+  pillar_url:
+    en: "/en/gemini.html"
+    es: "/es/gemini.html"
+
+- id: llama
+  name:
+    en: "Llama"
+    es: "Llama"
+  description:
+    en: "Meta's open-source large language model."
+    es: "Modelo de lenguaje de gran tamaño de código abierto de Meta."
+  pillar_url:
+    en: "/en/llama.html"
+    es: "/es/llama.html"
