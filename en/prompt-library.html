@@ -1,0 +1,29 @@
+---
+layout: default
+lang: en
+title: "Prompt Library"
+description: "Searchable database of high-performing prompts with one-click copy."
+---
+<h1 class="text-4xl font-bold mb-4">Prompt Library</h1>
+<input type="text" placeholder="Search prompts..." class="w-full p-3 border rounded mb-4" />
+<div class="grid md:grid-cols-2 gap-4" id="prompt-list">
+  <!-- Static mock prompts (could be generated from data) -->
+  <div class="bg-white p-4 rounded shadow">
+    <p class="font-mono text-sm mb-2">"Summarize this research paper for a non-technical audience."</p>
+    <button class="copy-btn text-blue-600">Copy</button>
+  </div>
+  <div class="bg-white p-4 rounded shadow">
+    <p class="font-mono text-sm mb-2">"Generate a five-day itinerary for a business trip to Tokyo."</p>
+    <button class="copy-btn text-blue-600">Copy</button>
+  </div>
+</div>
+<script>
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const text = btn.previousElementSibling.innerText;
+      navigator.clipboard.writeText(text);
+      btn.textContent = 'Copied!';
+      setTimeout(() => btn.textContent = 'Copy', 1500);
+    });
+  });
+</script>
