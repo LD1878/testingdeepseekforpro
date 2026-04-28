@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <script>
+    const pref = localStorage.getItem('preferredLang') || 'en';
+    window.location.replace('/' + pref + '/');
+  </script>
+</head>
+<body>Redirecting to <a href="/en/">English</a> or <a href="/es/">Spanish</a></body>
+</html>
