@@ -1,0 +1,4 @@
+/* assets/css/style.css */
+.prose h2 { @apply text-2xl font-semibold mt-6 mb-3; }
+.prose p  { @apply mb-4; }
+/* Add any overrides for the CDN-based Tailwind */
