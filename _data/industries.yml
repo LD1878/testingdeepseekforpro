@@ -1,0 +1,36 @@
+# _data/industries.yml
+- id: real-estate
+  name:
+    en: "Real Estate"
+    es: "Bienes Raíces"
+  slug:
+    en: "real-estate"
+    es: "bienes-raices"
+- id: litigation
+  name:
+    en: "Litigation"
+    es: "Litigios"
+  slug:
+    en: "litigation"
+    es: "litigios"
+- id: hospitality
+  name:
+    en: "Hospitality"
+    es: "Hostelería"
+  slug:
+    en: "hospitality"
+    es: "hosteleria"
+- id: marketing
+  name:
+    en: "Marketing"
+    es: "Marketing"
+  slug:
+    en: "marketing"
+    es: "marketing"
+- id: sales
+  name:
+    en: "Sales"
+    es: "Ventas"
+  slug:
+    en: "sales"
+    es: "ventas"
