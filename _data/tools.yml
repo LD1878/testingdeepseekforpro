@@ -1,44 +1,72 @@
-# _data/tools.yml
+# AI Tools - Pillar Pages
 - id: chatgpt
   name:
     en: "ChatGPT"
     es: "ChatGPT"
+  slug:
+    en: "chatgpt"
+    es: "chatgpt"
   description:
-    en: "OpenAI's conversational AI assistant."
-    es: "Asistente conversacional de IA de OpenAI."
+    en: "OpenAI's versatile language model for content, coding, analysis, and automation."
+    es: "Modelo de lenguaje versátil de OpenAI para contenido, codificación, análisis y automatización."
+  pricing:
+    free: true
+    pro: "$20/month"
   pillar_url:
-    en: "/en/chatgpt.html"
-    es: "/es/chatgpt.html"
+    en: "/en/pillars/chatgpt.html"
+    es: "/es/pilares/chatgpt.html"
+  icon: "🤖"
 
 - id: claude
   name:
     en: "Claude"
     es: "Claude"
+  slug:
+    en: "claude"
+    es: "claude"
   description:
-    en: "Anthropic's safe and steerable AI."
-    es: "IA segura y controlable de Anthropic."
+    en: "Anthropic's AI assistant known for nuanced reasoning, analysis, and safety."
+    es: "Asistente de IA de Anthropic conocido por razonamiento matizado, análisis y seguridad."
+  pricing:
+    free: true
+    pro: "$20/month"
   pillar_url:
-    en: "/en/claude.html"
-    es: "/es/claude.html"
+    en: "/en/pillars/claude.html"
+    es: "/es/pilares/claude.html"
+  icon: "🧠"
 
 - id: gemini
   name:
-    en: "Gemini"
-    es: "Gemini"
+    en: "Google Gemini"
+    es: "Google Gemini"
+  slug:
+    en: "gemini"
+    es: "gemini"
   description:
-    en: "Google's multimodal AI model."
-    es: "Modelo multimodal de IA de Google."
+    en: "Google's multimodal AI with real-time search, image understanding, and Workspace integration."
+    es: "IA multimodal de Google con búsqueda en tiempo real, comprensión de imágenes e integración con Workspace."
+  pricing:
+    free: true
+    pro: "$20/month"
   pillar_url:
-    en: "/en/gemini.html"
-    es: "/es/gemini.html"
+    en: "/en/pillars/gemini.html"
+    es: "/es/pilares/gemini.html"
+  icon: "🔍"
 
 - id: llama
   name:
-    en: "Llama"
-    es: "Llama"
+    en: "Meta Llama"
+    es: "Meta Llama"
+  slug:
+    en: "llama"
+    es: "llama"
   description:
-    en: "Meta's open-source large language model."
-    es: "Modelo de lenguaje de gran tamaño de código abierto de Meta."
+    en: "Open-source LLM by Meta for self-hosted deployment and customization."
+    es: "LLM de código abierto de Meta para implementación autohospedada y personalización."
+  pricing:
+    free: true
+    pro: "Self-hosted"
   pillar_url:
-    en: "/en/llama.html"
-    es: "/es/llama.html"
+    en: "/en/pillars/llama.html"
+    es: "/es/pilares/llama.html"
+  icon: "🦙"

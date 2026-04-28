@@ -1,25 +1,49 @@
-# _data/industries.yml
-- id: real-estate
+# Industries - Target Sectors
+- id: real_estate
   name:
     en: "Real Estate"
     es: "Bienes Raíces"
   slug:
     en: "real-estate"
     es: "bienes-raices"
-- id: litigation
+  description:
+    en: "How AI transforms property marketing, valuations, and client management."
+    es: "Cómo la IA transforma el marketing de propiedades, valoraciones y gestión de clientes."
+  use_cases:
+    en: "Property descriptions, Market analysis, Lead generation, Virtual tours"
+    es: "Descripciones de propiedades, Análisis de mercado, Generación de leads, Tours virtuales"
+  icon: "🏠"
+
+- id: legal
   name:
-    en: "Litigation"
-    es: "Litigios"
+    en: "Legal"
+    es: "Legal"
   slug:
-    en: "litigation"
-    es: "litigios"
+    en: "legal"
+    es: "legal"
+  description:
+    en: "AI-powered contract review, legal research, and compliance automation."
+    es: "Revisión de contratos impulsada por IA, investigación legal y automatización de cumplimiento."
+  use_cases:
+    en: "Contract analysis, Legal research, Due diligence, Document automation"
+    es: "Análisis de contratos, Investigación legal, Debida diligencia, Automatización de documentos"
+  icon: "⚖️"
+
 - id: hospitality
   name:
     en: "Hospitality"
-    es: "Hostelería"
+    es: "Hospitalidad"
   slug:
     en: "hospitality"
-    es: "hosteleria"
+    es: "hospitalidad"
+  description:
+    en: "AI solutions for guest experiences, booking optimization, and staff management."
+    es: "Soluciones de IA para experiencias de huéspedes, optimización de reservas y gestión del personal."
+  use_cases:
+    en: "Guest service chatbots, Booking recommendations, Revenue optimization"
+    es: "Chatbots de servicio al huésped, Recomendaciones de reservas, Optimización de ingresos"
+  icon: "🏨"
+
 - id: marketing
   name:
     en: "Marketing"
@@ -27,6 +51,14 @@
   slug:
     en: "marketing"
     es: "marketing"
+  description:
+    en: "Content creation, campaign optimization, and audience analysis at scale."
+    es: "Creación de contenido, optimización de campañas y análisis de audiencia a escala."
+  use_cases:
+    en: "Content generation, Email campaigns, Ad copy, Social media strategy"
+    es: "Generación de contenido, Campañas de email, Textos publicitarios, Estrategia social"
+  icon: "📢"
+
 - id: sales
   name:
     en: "Sales"
@@ -34,3 +66,40 @@
   slug:
     en: "sales"
     es: "ventas"
+  description:
+    en: "AI-enhanced prospecting, lead scoring, and sales workflow automation."
+    es: "Prospección mejorada por IA, puntuación de leads y automatización de flujo de ventas."
+  use_cases:
+    en: "Lead qualification, Sales scripts, CRM automation, Forecasting"
+    es: "Calificación de leads, Scripts de ventas, Automatización de CRM, Pronósticos"
+  icon: "💼"
+
+- id: healthcare
+  name:
+    en: "Healthcare"
+    es: "Salud"
+  slug:
+    en: "healthcare"
+    es: "salud"
+  description:
+    en: "AI for patient communication, documentation, and clinical decision support."
+    es: "IA para comunicación con pacientes, documentación y apoyo a decisiones clínicas."
+  use_cases:
+    en: "Patient engagement, Medical writing, Appointment scheduling"
+    es: "Compromiso del paciente, Escritura médica, Programación de citas"
+  icon: "⚕️"
+
+- id: education
+  name:
+    en: "Education"
+    es: "Educación"
+  slug:
+    en: "education"
+    es: "educacion"
+  description:
+    en: "Personalized learning, automated grading, and curriculum development."
+    es: "Aprendizaje personalizado, calificación automatizada y desarrollo curricular."
+  use_cases:
+    en: "Personalized tutoring, Test generation, Content summarization"
+    es: "Tutoría personalizada, Generación de exámenes, Resumen de contenido"
+  icon: "🎓"
