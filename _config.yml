@@ -13,7 +13,14 @@ collections:
     output: true
     permalink: /:lang/news/:year/:month/:day/:title/
 
+# Plugins
+plugins:
+  - jekyll-github-metadata
+  - jekyll-theme-primer
+
 # Exclude scripts from build
 exclude:
   - scripts/
   - README.md
+  - Gemfile
+  - Gemfile.lock
