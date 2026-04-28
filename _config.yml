@@ -1,0 +1,19 @@
+# _config.yml
+title: "The AI Blueprint"
+description: "A high-authority AI resource platform – bilingual, programmatic, and ethical."
+baseurl: ""   # set to repo name if project pages, e.g., "/ai-blueprint"
+url: "https://yourusername.github.io"
+
+# Default language for Jekyll (used only for the root redirect)
+default_lang: "en"
+
+# Collections for pillar pages (optional, but we'll just use plain pages)
+collections:
+  posts:
+    output: true
+    permalink: /:lang/news/:year/:month/:day/:title/
+
+# Exclude scripts from build
+exclude:
+  - scripts/
+  - README.md
