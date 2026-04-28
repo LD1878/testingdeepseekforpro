@@ -1,0 +1,30 @@
+---
+layout: default
+lang: en
+title: "Home - The AI Blueprint"
+description: "Your definitive source for AI tools, industry guides, and community knowledge."
+schema_type: "WebSite"
+---
+<section class="text-center py-12">
+  <h1 class="text-5xl font-bold mb-4">The AI Blueprint</h1>
+  <p class="text-xl text-gray-600 mb-8">Master artificial intelligence, one tool and industry at a time.</p>
+  <a href="/en/gpt.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700">Explore GPT Pillar</a>
+</section>
+<section class="grid md:grid-cols-2 gap-8 mt-12">
+  <div>
+    <h2 class="text-2xl font-semibold mb-3">Pillar Pages</h2>
+    <ul class="space-y-2">
+      {% for tool in site.data.tools %}
+      <li><a href="{{ tool.pillar_url[page.lang] | relative_url }}" class="text-blue-600 hover:underline">{{ tool.name[page.lang] }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div>
+    <h2 class="text-2xl font-semibold mb-3">Top Programmatic Guides</h2>
+    <ul class="space-y-2">
+      <li><a href="/en/chatgpt-real-estate.html" class="text-blue-600 hover:underline">ChatGPT for Real Estate</a></li>
+      <li><a href="/en/claude-litigation.html" class="text-blue-600 hover:underline">Claude for Litigation</a></li>
+      <li><a href="/en/gemini-marketing.html" class="text-blue-600 hover:underline">Gemini for Marketing</a></li>
+    </ul>
+  </div>
+</section>
